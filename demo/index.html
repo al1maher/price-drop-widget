@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' http://localhost:3000; style-src 'self'; connect-src 'self' http://localhost:3000; img-src 'self' data:; object-src 'none'; base-uri 'none';">
+    <title>Strict CSP Demo Shop</title>
+    <!-- Basic styling for the shop page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph Data for Fallback Extraction -->
+    <meta property="og:title" content="Super Cool Gadget 3000">
+    <meta property="og:url" content="http://localhost:3000/demo/">
+</head>
+
+<body>
+    <header>
+        <h1>My strict shop</h1>
+    </header>
+
+    <main class="product-page">
+        <div class="product-image">
+            <div class="placeholder-img">Product Image</div>
+        </div>
+        <div class="product-details">
+            <h2 id="productTitle">Super Cool Gadget 3000</h2>
+            <p class="price">$129.99</p>
+            <p class="description">This gadget changes your life. It has strict CSP so no inline scripts allowed!</p>
+
+            <!-- Widget Container -->
+            <div id="price-drop-container"></div>
+        </div>
+
+    </main>
+
+    <!-- Load the widget -->
+    <script src="/assets/price-drop-widget.min.js"></script>
+    <!-- Load page logic -->
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.product-page {
+    display: flex;
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.product-image {
+    flex: 1;
+    background: #eee;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b12704;
+}
